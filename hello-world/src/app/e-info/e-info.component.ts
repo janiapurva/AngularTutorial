@@ -25,4 +25,7 @@ export class EInfoComponent implements OnInit {
   constructor(private dservice: DataService) {}
 
   ngOnInit(): void {}
+  updateInfo(frm: any){
+    this.dservice.addInfo(frm.value.location)
+  }
 }
